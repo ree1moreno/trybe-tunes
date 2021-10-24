@@ -1,0 +1,42 @@
+.footer-container {
+  background-color: rgb(19, 19, 19);
+  color: white;  
+  font-family: cursive;
+  font-size: 1em;
+  margin-top: 100px;
+  padding: 25px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.footer-container a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer-container a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  color: var(--fire-laranja-escuro);
+  text-decoration: none;
+}
+
+.footer-container a:active {
+  color: white;
+  text-decoration: none;
+}
+
+@media ( max-width : 460px ) {
+  
+  .footer-container p {
+    font-size: 14px;
+  }
+}

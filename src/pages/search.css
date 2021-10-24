@@ -1,0 +1,158 @@
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 20px;
+}
+
+.search-input {
+  background-image: url('./img/loupe-icon.png');
+  background-position: 94%;
+  background-repeat: no-repeat;
+  background-size: 17px;
+  border: 1px solid rgb(225, 229, 235);
+  border-radius: 5px;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  height: 33px;
+  margin-right: 15px;
+  padding: 5px;
+  text-indent: 15px;
+  width: 328px;
+}
+
+.search-button {
+  background: rgb(199, 166, 100);
+  border-radius: 5px;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  height: 45px;
+  padding: 0;
+  width: 152px;
+}
+
+.search-button:hover {
+  background-color: rgb(208, 62, 115);
+  color: black;
+}
+
+.search-button:disabled {
+  background-color: white;
+  color: black;
+  cursor: wait;
+}
+
+.result-title {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  padding: 0 0 10px;
+  text-align: center;
+}
+
+.result-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.artist-card-box {
+  align-items: center;
+  background-color: rgba(250, 250, 250, 0.897);
+  border-radius: 4px;
+  box-shadow: 1px 6px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  margin: 10px 8px;
+  padding: 8px;
+  width: 200px;
+}
+
+.artist-card-box:hover {
+  cursor: pointer;
+  transform: scale(1.13);
+  transition: 0.6s;
+}
+
+.album-cover {
+  border: 1px solid black;
+  border-radius: 3px;
+  height: 180px;
+  width: 100%;
+}
+
+.title-box {
+  color: black;
+  width: 200px;
+}
+
+.album-title {
+  font-size: 16px;
+  margin: 15px 0 5px;
+  text-align: center;
+}
+
+.artist {
+  font-size: 14px;
+  margin: 0 0 15px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.error-message {
+  font-size: 28px;
+  margin-right: 5px;
+}
+
+@media ( max-width : 520px ) {
+
+  .search-form {
+    align-items: center;
+    flex-direction: column;
+    margin: 8px;
+    padding: 10px;
+  }
+
+  .search-form input, .search-form button {
+    transform: scale(0.8);
+  }
+
+  .result-title {
+    font-size: 25px;
+  }
+
+  .result-container {
+    padding: 0 10px;
+  }
+
+  .artist-card-box {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px 4px;
+    padding: 0;
+  }
+  
+  .album-cover {
+    transform: scale(0.8);
+  }
+}
