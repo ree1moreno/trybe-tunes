@@ -25,7 +25,7 @@
 }
 
 .footer-container a:hover {
-  color: var(--fire-laranja-escuro);
+  color: rgb(208, 62, 115);
   text-decoration: none;
 }
 
